@@ -1,0 +1,35 @@
+@mixin size1107 {
+  @media (max-width: $size1107) {
+    @content;
+  }
+}
+
+@mixin md-device {
+  @media (max-width: $md-device-max-size) {
+    @content;
+  }
+}
+
+@mixin sm-device {
+  @media (max-width: $sm-device-max-size) {
+    @content;
+  }
+}
+
+@mixin xs-device {
+  @media (max-width: $xs-device-max-size) {
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media (max-width: $small-screen-max-size) {
+    @content;
+  }
+}
+
+@mixin ext-small-screen {
+  @media (max-width: $ext-small-screen-max-size) {
+    @content;
+  }
+}

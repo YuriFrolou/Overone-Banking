@@ -1,0 +1,79 @@
+.act-form {
+  border-radius: 10px;
+  padding: 20px 0;
+  flex-basis: 31%;
+  @include sm-device {
+    margin-bottom: 12px;
+  }
+
+  &--transfer {
+    background-color: rgb(238, 43, 213);
+  }
+
+  &--credit {
+    background-color: rgb(85, 255, 109);
+  }
+
+  &--close {
+    background-color: rgb(128, 71, 230);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &--credit {
+      justify-content: flex-start;
+
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__item {
+    flex-basis: 38%;
+
+    &:last-child {
+      align-self: flex-start;
+      flex-basis: 15%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 6px;
+      padding: 3px;
+      box-sizing: border-box;
+    }
+
+    label {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    button {
+      background-color: rgb(236, 239, 203);
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      width: 40px;
+      flex-shrink: 0;
+
+      img {
+        width: 20px;
+        height: 10px;
+      }
+    }
+  }
+}

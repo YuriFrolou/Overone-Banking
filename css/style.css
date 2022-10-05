@@ -1,0 +1,406 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.registr {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/cover.jpg) center/cover no-repeat gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bank {
+  background: rgb(181, 175, 192);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(181, 175, 192)), to(rgb(204, 255, 195)));
+  background: linear-gradient(to right, rgb(181, 175, 192), rgb(204, 255, 195));
+  width: 100%;
+  min-height: 100vh;
+  display: none;
+}
+
+.bank .container {
+  width: 90%;
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.head {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media (max-width: 480px) {
+  .head {
+    font-size: 26px;
+  }
+}
+
+.operations {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+
+.operations-wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .operations-wrapper {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .operations-wrapper {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.bank-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.balance {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue rgb(202, 255, 218);
+}
+
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(202, 255, 218);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 10px;
+  border: 3px solid rgb(202, 255, 218);
+}
+
+.info {
+  font-size: 20px;
+}
+.info__text {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.registr-form {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 10px;
+  background-color: rgba(139, 212, 149, 0.6);
+  border-radius: 20px;
+  border: 1px solid brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+.registr-form__title {
+  margin-bottom: 30px;
+}
+@media (max-width: 480px) {
+  .registr-form__title {
+    font-size: 28px;
+  }
+}
+.registr-form__label {
+  font-weight: 700;
+}
+.registr-form__input {
+  margin-bottom: 20px;
+  border: 1px solid brown;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  width: 80%;
+}
+@media (max-width: 575px) {
+  .registr-form__input {
+    width: 100%;
+  }
+}
+.registr-form__input_pass {
+  width: 150px;
+}
+@media (max-width: 575px) {
+  .registr-form__input_pass {
+    width: 100%;
+  }
+}
+.registr-form__button {
+  border: 0;
+  outline: none;
+  background-color: rgb(210, 220, 159);
+  padding: 10px;
+  border-radius: 20px;
+  width: 60%;
+  font-size: 17px;
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .registr-form__button {
+    width: 100%;
+  }
+}
+
+.transactions {
+  background-color: rgb(202, 255, 218);
+  border-radius: 20px;
+  -ms-flex-preferred-size: 57%;
+      flex-basis: 57%;
+  padding: 20px 10px 0 20px;
+  margin-right: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+@media (max-width: 991px) {
+  .transactions {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .transactions {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .transactions {
+    border-radius: 15px;
+  }
+}
+.transactions__row {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .transactions__row {
+    padding: 20px 10px;
+  }
+}
+.transactions__date {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.transactions__type {
+  color: blueviolet;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.transactions__type--withdrawal {
+  color: red;
+}
+.transactions__value {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.total__value {
+  font-size: 20px;
+  font-weight: 700;
+}
+.total__value--in {
+  margin-right: 20px;
+}
+.total__value--in span {
+  color: blueviolet;
+}
+.total__value--out span {
+  color: red;
+}
+
+.act-form {
+  border-radius: 10px;
+  padding: 20px 0;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+}
+@media (max-width: 767px) {
+  .act-form {
+    margin-bottom: 12px;
+  }
+}
+.act-form--transfer {
+  background-color: rgb(238, 43, 213);
+}
+.act-form--credit {
+  background-color: rgb(85, 255, 109);
+}
+.act-form--close {
+  background-color: rgb(128, 71, 230);
+}
+.act-form__title {
+  margin-bottom: 20px;
+}
+.act-form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.act-form__wrapper--credit {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.act-form__wrapper--credit input {
+  margin-right: 10px;
+}
+.act-form__item {
+  -ms-flex-preferred-size: 38%;
+      flex-basis: 38%;
+}
+.act-form__item:last-child {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.act-form__item input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.act-form__item label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.act-form__item button {
+  background-color: rgb(236, 239, 203);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  width: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.act-form__item button img {
+  width: 20px;
+  height: 10px;
+}/*# sourceMappingURL=style.css.map */

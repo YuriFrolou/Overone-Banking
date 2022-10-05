@@ -1,0 +1,56 @@
+.registr-form {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px 10px;
+  background-color: rgba(139, 212, 149, 0.6);
+  border-radius: 20px;
+  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+
+  &__title {
+    margin-bottom: 30px;
+    @include small-screen {
+      font-size: 28px;
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    border: 1px solid brown;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    width: 80%;
+    @include xs-device {
+      width: 100%;
+    }
+
+    &_pass {
+      width: 150px;
+      @include xs-device {
+        width: 100%;
+      }
+    }
+  }
+
+  &__button {
+    border: 0;
+    outline: none;
+    background-color: rgb(210, 220, 159);
+    padding: 10px;
+    border-radius: 20px;
+    width: 60%;
+    font-size: 17px;
+    font-weight: 500;
+    @include xs-device {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="registr">
+        <form action="#" class="registr-form" name="form" autocomplete="on">
+            <h1 class="registr-form__title">Добро пожаловать</h1>
+                <label for="name" class="registr-form__label">Введите ваше имя</label>
+                <input type="text" name="name" id="name" class="registr-form__input">
+                <label for="pass" class="registr-form__label">Введите пароль</label>
+                <input type="password" name="pass" id="pass" class="registr-form__input registr-form__input_pass">
+                <button type="submit" name="but" id="but" class="registr-form__button">Отправить</button>
+        </form>
+    </div>
+    <div class="bank">
+        <header class="head"></header>
+        <div class="container">
+            <div class="bank-info">
+                <div class="info">
+                    <div class="info__text">Текущий баланс</div>
+                    <div class="info__date"></div>
+                </div>
+                <div class="balance"></div>
+            </div>
+            <div class="operations">
+                <div class="transactions"></div>
+                <div class="operations-wrapper">
+                    <form action="#" class="act-form act-form--transfer" name="transfer">
+                        <h3 class="act-form__title">Перевести деньги</h3>
+                        <div class="act-form__wrapper">
+                        <div class="act-form__item act-form__item--transfer">
+                            <input type="text" id="recipient">
+                            <label for="recipient">Получатель</label>
+                        </div>
+                        <div class="act-form__item act-form__item--transfer">
+                            <input type="number" id="sum">
+                            <label for="sum">Сумма</label>
+                        </div>
+                        <div class="act-form__item act-form__item--transfer">
+                            <button type="submit" id="transfer-btn">
+                                <img src="./images/send.png" alt="Отправить">
+                            </button>
+                        </div>
+                        </div>
+                    </form>
+
+                    <form action="#" class="act-form act-form--credit" name="credit">
+                        <h3 class="act-form__title">Запросить займ</h3>
+                        <div class="act-form__wrapper act-form__wrapper--credit">
+                        <div class="act-form__item act-form__item--credit">
+                            <input type="number" id="credit-sum">
+                            <label for="credit-sum">Сумма</label>
+                        </div>
+                        <div class="act-form__item act-form__item--credit">
+                            <button type="submit" id="credit-btn">
+                                <img src="./images/send.png" alt="Отправить">
+                            </button>
+                        </div>
+                        </div>
+                    </form>
+
+
+                    <form action="#" class="act-form act-form--close" name="close">
+                        <h3 class="act-form__title">Закрыть счёт</h3>
+                        <div class="act-form__wrapper">
+                        <div class="act-form__item act-form__item--close">
+                            <input type="text" id="close-name">
+                            <label for="close-name">Подтвердить имя</label>
+                        </div>
+                        <div class="act-form__item act-form__item--close">
+                            <input type="number" id="close-pin">
+                            <label for="close-pin">Подтвердить PIN</label>
+                        </div>
+                        <div class="act-form__item act-form__item--close">
+                            <button type="submit" id="close-btn">
+                                <img src="./images/send.png" alt="Отправить">
+                            </button>
+                        </div>
+                        </div>
+                    </form>
+
+                    <div class="credit"></div>
+                    <div class="close"></div>
+                </div>
+            </div>
+            <div class="total">
+                <div class="total__value total__value--in"></div>
+                <div class="total__value total__value--out"></div>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <script src="js/accounts.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
